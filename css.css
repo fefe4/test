@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: thistle;
+  width:10vw;
+  left:0%;
+  top:0%;
+  bottom:0%;
+  position:absolute;
+  height: 100%;
+  overflow:hidden;
+  
+}
+
+.menu {
+  color:rgb(179, 17, 179);
+  font-weight:600;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  background-color: thistle;
+  position: relative;
+  border: unset;
+  text-align: left;
+  width:100%;
+  /* border:violet;
+  border-style: solid;
+  border-bottom-width: 3px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px; */
+  height:5vh;
+  
+  
+}
+
+.navbar {
+  background-color:rgb(228, 233, 220);
+  height:5vh;
+  width:90vw;
+  top:0%;
+  left:10vw;
+  position:absolute;
+}
+
+.menu:hover{
+  
+  background-color:rgb(228, 233, 220);
+}
