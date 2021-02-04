@@ -1,46 +1,84 @@
-.sidebar {
-  background-color: thistle;
-  width:10vw;
-  left:0%;
-  top:0%;
-  bottom:0%;
+.menuBtn {
   position:absolute;
-  height: 100%;
-  overflow:hidden;
+  display:flex;
+  overflow-y: hidden;
+  top:3vh;
+  left:-1.5vw;
+  background-color: blueviolet;
+  color:white;
+  width:15vw;
+  height:15vw;
+  justify-content: center;
+  font-size: 12vw;
+  vertical-align: middle;
+  border-radius: 20%;
+  border:none;
+  z-index: -1;
+}
+
+.bubbleMenu{
+  display:none;
+  position:block;
+  overflow-y: hidden;
+  background-color: blueviolet;
+  color:white;
+  width:5vw;
+  height:5vw;
+
+  left:1.5vw;
+  border-radius:50%;
+  transform: scale(50,50) ;
+  transition: transform 500ms ease-in;
+}
+
+.menuItems {
+  display:none;
+  position:fixed;
+  width:50vw;
+  left:15vw;
+}
+
+.menuItems  a {
+  position:block;
+  display:flex;
+  font-size: 7vw;
+  color:white;
+  line-height: 7vh;
   
 }
 
-.menu {
-  color:rgb(179, 17, 179);
-  font-weight:600;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
-  background-color: thistle;
-  position: relative;
-  border: unset;
-  text-align: left;
-  width:100%;
-  /* border:violet;
-  border-style: solid;
-  border-bottom-width: 3px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px; */
-  height:5vh;
-  
-  
+.menuBtn:active .bubbleMenu{
+  transform: scale(76,76) ;
+  transition: transform 1000ms ease-in-out;
 }
 
-.navbar {
-  background-color:rgb(228, 233, 220);
-  height:5vh;
-  width:90vw;
-  top:0%;
-  left:10vw;
-  position:absolute;
+
+.closeBtn {
+  display:block;
+  position: fixed;
+  justify-content: center;
+  height:100vh;
+  top:75vh;
+  align-items:center;
+  margin: 0 auto;
+  display:inline-block;
+  text-align:center;
+  width: 100vw;
 }
 
-.menu:hover{
+.closeBtn button {
+
+  background-color: blueviolet;
+  width:10vh;
+  height:10vh;
+  border-radius: 50%;
+  color:white;
+  font-size: 20vw;
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  font-family:'Times New Roman', Times, serif;
+  border:none;
+  border-style: none;
   
-  background-color:rgb(228, 233, 220);
 }

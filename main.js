@@ -1,14 +1,25 @@
-const sidebarDeploy =function () {
-const menu = document.getElementById("menu0");
-menu.addEventListener ('click', () => {
-  const submenu = document.getElementById("menu0").getElementsByClassName("submenu");
-  console.log (submenu[0]);
-  console.log (submenu[0].style.display)
-  if (submenu[0].style.display === "block") {
-    submenu[0].style.display = "none";
-    } else {
-    submenu[0].style.display = "block";
-    } 
+
+const menuBtn = document.getElementById("menuBtn");
+const closeBtnX = document.getElementById("closeBtnX");
+
+closeBtnX.addEventListener ('click', ()=>{
+  document.getElementById("bubbleMenu").style.display = "none";
+  document.getElementById("menuitems").style.display = "none";
+  document.getElementById("closeBtnX").style.display = "none";
+})
+
+menuBtn.addEventListener ('click', ()=> {
+  document.getElementById("bubbleMenu").style.display = "block";
+  document.getElementById("menuitems").style.display = "block";
+  document.getElementById("closeBtnX").style.display = "block";
 });
-}
-sidebarDeploy();
+
+
+
+// // When the user clicks on <span> (x), close the bubbleMenu
+// span.onclick = function () {
+//   bubbleMenu.style.display = "none";
+// }
+
+// When the user clicks anywhere outside of the bubbleMenu, close it
+
